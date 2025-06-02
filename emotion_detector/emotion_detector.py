@@ -1,5 +1,6 @@
 def emotion_predictor(text):
     if not text.strip():
+
         # Return error and status code 400 for empty input
         return {"error": "Input text is empty"}, 400
 
@@ -15,5 +16,9 @@ def emotion_predictor(text):
     result = {"emotion": dominant_emotion}
     result.update(emotions)
 
+<<<<<<< HEAD
     # Return result and status code 200 for success
     return result, 200
+=======
+    return result, 200  # return tuple with status code 200
+>>>>>>> 5d9e71f (Add error handling and validation, update tests)
